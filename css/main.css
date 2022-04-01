@@ -1,0 +1,133 @@
+/* GLOBAL STYLES */
+:root{
+    --brand-color:rgb(5, 5, 135);
+    --text-color:#222;
+    --bg-color:#fff;
+    --logo-color:rgb(60, 160, 117);
+    --border-color:#1aced1;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: #000 1px dashed;
+    outline-offset: 5px;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+    transition: background-color 1s ease, color 1s ease;
+}
+.dark-mode{
+    --brand-color:rgb(65, 65, 177);
+    --bg-color:#333;
+    --text-color:rgb(28, 203, 48);
+    --logo-color:#5f7d9b;
+    --border-color:#0ad3f1;
+      
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* CONTAINER SYTLES */
+.container {
+    width: 100%;
+    max-width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 2px dashed var(--border-color);
+    border-right: 2px dashed var(--border-color);
+}
+
+/* MAIN SECTION */
+.main {
+    flex-grow: 1;
+}
+/* HEADER SECTION STYLES */
+.header {   
+    padding-top: 20px;
+}
+/* HEADER TOP SECTION SETYLES*/
+.header-top{
+    display: flex;
+    border-bottom: 2px solid var(--text-color);
+}
+.header-logo{
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 50px;
+     font-weight: 800;
+     color:var(--logo-color);
+     display: block;
+}
+.nav {
+    display: flex;
+    align-items:center;
+}
+.nav-btn{
+    padding: 8px 20px;
+    margin-right: 5px;
+    background-color: var(--brand-color);
+    color:#fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.nav-btn:not(:last-child) {
+    margin-right: 5px;
+
+}
+
+/* HEADER BOTTOM SECTION STYLES */
+.header-bottom {
+    padding-top: 50px;
+   
+}
+.header-image {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: inline-block; 
+    border-radius: 50%;
+}
+.display-img{
+    display: none;
+}
+
+.header-bottom-title {
+    font-weight: bold;
+    margin-top: 60px;
+    width: 400px;
+    line-height: 40px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.list-item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
